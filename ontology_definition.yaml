@@ -1,25 +1,20 @@
-# Palantir-Aligned Healthcare Ontology: Diversion Intelligence
-# Mapping Thesis Findings to "Connected Use Cases"
+# Palantir-Aligned Hospital Operations & Clinical Ontology
+# Version: 2.0 (Integrated Bayesian Withdrawal Monitoring)
 
-Priority_Modules:
-  - Module: Clinical Care
-    Use_Case: Automated Clinical Documentation
-    Logic: Reconciliation of Pyxis_Transaction with Sunrise_eMAR_Admin [cite: 8, 71]
-  
-  - Module: Revenue Cycle Management
-    Use_Case: Automated Charge Capture / Loss Prevention
-    Economic_Impact:  Billion Annual System Cost [cite: 5, 19]
-    Recovery_Opportunity: k-k Annualized per Pharmacist Analyst [cite: 131, 171]
+Modules:
+  - Name: Clinical Care (Withdrawal Management)
+    Focus: CIWA (Alcohol) & COWS (Opiate) Assessments
+    Statistical_Model: Bayesian Probability (Prior: Patient History + Evidence: Score Trends)
+    Data_Sources: [Sunrise_eMAR_Flowsheets, Pyxis_PRN_Utilization] [cite: 72, 73]
 
-  - Module: Scheduling + Staffing
-    Use_Case: Automated Day-of Staff Balancing (Risk Mitigation)
-    Anomalies: "Waste Buddy" dyadic witnessing patterns [cite: 211, 212]
-    Risk_Clusters: High-acuity unit volatility (e.g., 3NORTH, ICU) [cite: 111, 113]
+  - Name: Scheduling + Staffing (Operational Linkage)
+    Use_Case: Predicting 1:1 "Sitter" Requirements
+    Logic: High Posterior Probability of Severe Withdrawal -> Automated Staff Balancing [cite: 110-113]
 
-  - Module: Connected Capacity Management
-    Use_Case: Eligibility + Actioning for Transitions of Care
-    Safety_Logic: Prevention of delayed analgesia causing discharge barriers [cite: 147, 148]
+  - Name: Security & Audit (Palantir Standard)
+    Feature: Click-by-click Telemetry [cite: 128, 177]
+    Compliance: HIPAA-Enforced Data Liquidity via ABAC (Attribute-Based Access Control) [cite: 217, 218]
 
-  - Module: Configurable Use Cases
-    Use_Case: Nurse Hand-off Reports
-    Verification: Identification of "batched" documentation at shift changes 
+Data_Objects (USCDI Mapping):
+  - Assessment_Event: CIWA_Score | COWS_Score -> Observation (USCDI) [cite: 220, 223]
+  - Probabilistic_Outcome: P(Severe_Withdrawal | Assessment_History)
