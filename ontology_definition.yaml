@@ -1,0 +1,25 @@
+# Palantir-Aligned Healthcare Ontology: Diversion Intelligence
+# Mapping Thesis Findings to "Connected Use Cases"
+
+Priority_Modules:
+  - Module: Clinical Care
+    Use_Case: Automated Clinical Documentation
+    Logic: Reconciliation of Pyxis_Transaction with Sunrise_eMAR_Admin [cite: 8, 71]
+  
+  - Module: Revenue Cycle Management
+    Use_Case: Automated Charge Capture / Loss Prevention
+    Economic_Impact:  Billion Annual System Cost [cite: 5, 19]
+    Recovery_Opportunity: k-k Annualized per Pharmacist Analyst [cite: 131, 171]
+
+  - Module: Scheduling + Staffing
+    Use_Case: Automated Day-of Staff Balancing (Risk Mitigation)
+    Anomalies: "Waste Buddy" dyadic witnessing patterns [cite: 211, 212]
+    Risk_Clusters: High-acuity unit volatility (e.g., 3NORTH, ICU) [cite: 111, 113]
+
+  - Module: Connected Capacity Management
+    Use_Case: Eligibility + Actioning for Transitions of Care
+    Safety_Logic: Prevention of delayed analgesia causing discharge barriers [cite: 147, 148]
+
+  - Module: Configurable Use Cases
+    Use_Case: Nurse Hand-off Reports
+    Verification: Identification of "batched" documentation at shift changes 
